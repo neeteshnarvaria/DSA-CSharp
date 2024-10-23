@@ -1,4 +1,5 @@
 ﻿using DSA.Arrays;
+using DSA.General;
 using DSA.LinkedList;
 using DSA.Sorting;
 
@@ -25,7 +26,7 @@ class Program
         queue.Dequeue();*/
         //FindUsernames.Run();
 
-        int[] numbers = { 64, 25, 12, 22, 11 };
+        /*int[] numbers = { 64, 25, 12, 22, 11 };
         string[] stringArray = { "banana", "apple", "date", "cherry"};
         Console.WriteLine("Original array:");
         Console.WriteLine(string.Join(", ", numbers));
@@ -43,7 +44,16 @@ class Program
         selectionSort.Sort(stringArray);
 
         Console.WriteLine("Sorted String array:");
-        Console.WriteLine(string.Join(", ", stringArray));
+        Console.WriteLine(string.Join(", ", stringArray));*/
+        
+        Console.WriteLine("Sum is: "+Utilities.Sum([1,2,4,5]));
 
+        Console.WriteLine("Count is: "+Utilities.CountItems([1,2,4,5],0));
+
+        Console.WriteLine("Max is: "+Utilities.FindMax([1,2,4,5], 0));
+
+        Console.WriteLine("Item exist at index: "+Utilities.RecursiveBinarySearch([1,2,4,5], 0));
+
+        Console.WriteLine("Item exist at index: "+Utilities.RecursiveBinarySearch([1,2,4,5], 4));
     }
 }
